@@ -1,0 +1,8 @@
+だめ文字を含むzipアーカイブを正しく扱えないzipfileモジュールの代替実装です。
+このモジュールを使えばだめ文字をファイル名に含んでいてもアーカイブの内容を
+正しくinflateできます。
+
+ex)
+import zipfile_alt as zipfile
+ar = zipfile.ZipFile('archive.zip')
+ar.extractall()
